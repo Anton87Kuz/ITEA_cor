@@ -12,13 +12,13 @@ namespace HomeWork1
         {
             double var_x; // declaration of variable -- argument of functions
 
-            Console.WriteLine("Evaluation of function y=sqrt(x^3+5x-8) at point x.");
+            Console.WriteLine("Evaluation of function y=sqrt(x^2+x-8) at point x.");
             Console.Write("Input x = ");
 
             var temp_var = Console.ReadLine();
             double.TryParse(temp_var, out var_x);
 
-            var temp_value = var_x * var_x * var_x + 5 * var_x - 8; //evaluation of expression under square root, it must be bigger or equal to zero
+            var temp_value = var_x * var_x + var_x - 8; //evaluation of expression under square root, it must be bigger or equal to zero
 
             if (temp_value < 0) //checking of expression under root being below zero
             {
